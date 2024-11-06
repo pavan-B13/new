@@ -1,0 +1,7 @@
+to create multi node 
+minikube start --nodes 3
+to add labels to the nodes
+kubectl label nodes minikube-m02 node-role.kubernetes.io/worker=
+kubectl label nodes minikube-m03 node-role.kubernetes.io/worker=
+to start view a webserver 
+minikube service <service name>
