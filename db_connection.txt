@@ -1,0 +1,12 @@
+how to connect to a db with in a same network
+open windows defender firewall add outbound rule with port 3306
+win+r search services.msc
+restart mysql 
+now create a new db with your ip
+
+'''
+create user on ip address
+create user 'pavan'@'%' identified by '1234';
+GRANT ALL PRIVILEGES ON *.* TO 'pavan'@'%' WITH GRANT OPTION;
+flush privileges;
+'''
